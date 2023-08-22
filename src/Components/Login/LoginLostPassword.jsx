@@ -1,6 +1,6 @@
 import React from 'react'
 
-function LoginLostPassword() {
+const LoginLostPassword = () => {
   return (
     <div>LoginLostPassword</div>
   )
