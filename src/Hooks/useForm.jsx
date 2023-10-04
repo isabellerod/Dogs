@@ -9,6 +9,10 @@ const validation = {
     regex: /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$/,
     message: 'Your password must be at least 8 characters and must contain at least one upper case one lower case one digit and one special character',
   },
+  number: {
+    regex: /^\d+$/,
+    message: 'Only numbers',
+  }
 }
 
 const useForm = (type) => {
