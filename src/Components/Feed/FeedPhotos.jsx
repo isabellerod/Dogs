@@ -11,10 +11,10 @@ const FeedPhotos = ({ page, user, setModalPhoto, setInfinite }) => {
 
   React.useEffect(() => {
     async function fetchPhotos() {
-      const total = 3;
-      const { url, options } = PHOTOS_GET({ page, total, user });
+      const maxNumberOfPages = 3;
+      const { url, options } = PHOTOS_GET({ page, maxNumberOfPages , user });
       const { response, json } = await request(url, options);
-      if(response && response.ok && json.length < total){
+      if(response && response.ok && json.length < maxNumberOfPages){
         setInfinite(false);
       }
     }
