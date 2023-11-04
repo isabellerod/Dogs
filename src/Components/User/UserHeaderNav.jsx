@@ -32,7 +32,7 @@ const UserHeaderNav = () => {
           <MyPictures />
           {mobile && 'My Pictures'}
         </NavLink>
-        <NavLink to='/account/statistics'>
+        <NavLink to="/account/statistics">
           <Statistics />
           {mobile && 'Statistics'}
         </NavLink>
